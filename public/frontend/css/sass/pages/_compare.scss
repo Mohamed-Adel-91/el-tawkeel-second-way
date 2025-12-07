@@ -1,0 +1,36 @@
+.comparesection {
+    background-color: #F3F3F3;
+    &_button {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    border: 1.5px solid #D03B37;
+    font-weight: bold;
+    text-align: center;
+    }
+}
+
+.comparePage .Carbrand,
+.comparePage .carbrandtype  {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16) !important;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 25px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 215px;
+    flex-direction: column;
+}
+
+.comparePage thead tr {
+    background-color: #d03b37;
+}
+
+.lieanerBg  {
+background: #FFFFFF;
+background: linear-gradient(145deg, rgba(255, 255, 255, 1) 0%, rgba(232, 232, 232, 0.52) 100%);
+}

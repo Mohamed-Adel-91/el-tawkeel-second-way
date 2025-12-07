@@ -1,0 +1,16 @@
+{
+    "cairo": {
+        "normal": "/workspace/el-tawkeel-backend/storage/fonts/cairo_normal_040a14ebcb2e69e83169c84ef0a92e85"
+    },
+    "ge ss two": {
+        "500": "/workspace/el-tawkeel-backend/storage/fonts/ge_ss_two_500_652ad08daaefd0c8baedfbcd8d60300d",
+        "normal": "/workspace/el-tawkeel-backend/storage/fonts/ge_ss_two_normal_9ee891de2cff298a2906ced3a5e49435",
+        "bold": "/workspace/el-tawkeel-backend/storage/fonts/ge_ss_two_bold_c1c8fbe2f561d9f660d8299db50e0ad3"
+    },
+    "dubai": {
+        "bold": "/workspace/el-tawkeel-backend/storage/fonts/dubai_bold_ea38458c1b9c8b656b667c4137b14035",
+        "300": "/workspace/el-tawkeel-backend/storage/fonts/dubai_300_59aadec345643e13c5937630ea16a703",
+        "500": "/workspace/el-tawkeel-backend/storage/fonts/dubai_500_9f016e51104840e38b775bf3370e01fd",
+        "normal": "/workspace/el-tawkeel-backend/storage/fonts/dubai_normal_3251a0dfd85afb1891d7b2f29a52df24"
+    }
+}

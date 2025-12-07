@@ -1,0 +1,113 @@
+/* ====================================== _____________ Reset Styles _____________ ====================================== */
+* {
+    outline: 0 !important;
+    box-shadow: none ;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+html{
+    font-size: 100%;
+    @include for_phone() {
+        font-size: 85%;
+    }
+    @include for_miniTb() {
+        font-size: 88%;
+    }
+    @include for_tablet() {
+        font-size: 90%;
+    }
+    @include for_miniLt() {
+        font-size: 95%;
+    }
+    @include for_labtop() {
+        font-size: 100%;
+    }
+    overflow-x: hidden;
+}
+
+// body {
+//     font-size: 1rem;
+//     font-weight: 400;
+//     font-family: Dubai;
+//     overflow-x: hidden
+// }
+
+body {
+    font-size: $mainFont;
+    font-weight: 400;
+    direction: rtl;
+    font-family: "GE SS Two", sans-serif;
+    background-color: #f9f9f9;
+    overflow-x: hidden;
+}
+@media(max-width: 1024px) {
+    body {
+        padding-bottom:54px
+    }
+}
+.container {
+    width: 100%
+}
+
+@media (min-width: 640px) {
+    .container {
+        max-width:640px
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width:768px
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width:1024px
+    }
+}
+
+@media (min-width: 1536px) {
+    .container {
+        max-width:1280px !important ;
+    }
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem
+}
+
+@media (min-width: 1279px) {
+    .container {
+        max-width:1280px
+    }
+}
+
+@media (min-width: 1200px) and (max-width:1279px) {
+    .container {
+        max-width:1195px
+    }
+}
+
+.en {
+    font-family: "Dubai"
+}
+
+
+.popup {
+    background-color: white;
+}
+/* ====================================== _____________ Reset Styles _____________ ====================================== */

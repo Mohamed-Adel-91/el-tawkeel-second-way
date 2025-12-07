@@ -1,0 +1,271 @@
+.banner_content {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: white;
+    }
+
+    p {
+        color: white;
+        font-size: 1.1rem;
+        width: 56%;
+    }
+
+    a {
+        padding: 0.7rem 3rem;
+        background: white;
+        color: #D03B37;
+        border-radius: 6px;
+    }
+
+    @media (max-width: 768px) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        align-items: center;
+        text-align: center;
+        right: auto;
+        width: 100%;
+
+        h2 {
+
+        }
+
+        p {
+            width: 100%;
+        }
+    }
+}
+
+.Tobtitle {
+    text-align: center;
+    color: #D03B37;
+    margin: 2rem 0 3rem;
+
+    h2 {
+        font-weight: 400;
+        font-size: 2rem;
+    }
+}
+
+.tab-btn {
+    position: relative;
+    // color: white;
+    &.active {
+        &:hover {
+        color: white;
+    }
+    }
+    text-align: center;
+    /* عشان الـ ::after يتحط بالنسبة للزر */
+}
+
+.tabs_button {
+    @media screen and (max-width: 768px) {
+        flex-wrap: wrap;
+    }
+
+}
+
+.tab-btn:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 1px;
+    background-color: #d7d7d7;
+}
+
+.tab-pane {
+    display: block;
+    /* فقط التاب الأول ظاهر */
+}
+
+.tab-pane.hidden {
+    display: none;
+}
+
+.section_desc h2 {
+    font-size: 1.5rem;
+    color: #D03B37;
+}
+
+.section_desc {
+    .video-container {
+        height: 250px;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 768px) {
+            height: 220px;
+        }
+
+        @media screen and (max-width: 480px) {
+            height: 260px;
+        }
+    }
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+
+}
+
+.video-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Play button styling */
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.play-button img {
+    width: 64px;
+    height: 64px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.play-button:hover img {
+    opacity: 1;
+}
+
+/* Popup styling */
+.popupsection {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+}
+
+.popupsection_box {
+    position: relative;
+    max-width: 800px;
+    width: 90%;
+    height: 450px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.popupsection_close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: #000;
+    border-radius: 50%;
+    z-index: 101;
+}
+
+.popupsection_close svg {
+    width: 24px;
+    height: 24px;
+    stroke: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    .play-button img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .popupsection_box {
+        height: 300px;
+    }
+}
+
+.swiperExterior {
+    .swiper-slide {
+        height: auto !important;
+    }
+
+    .slide {
+        // height: 100%;
+
+        @media (max-width: 568px) {
+            height: auto;
+        }
+
+        &_img {
+            @media (max-width: 568px) {}
+        }
+    }
+
+}
+
+.swiperExterior .swiper-button-prev,
+.swiperExterior .swiper-button-next {
+    width: 45px !important;
+    height: 45px !important;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: #fff !important;
+    transition: all 0.3s ease;
+    z-index: 20;
+}
+
+.swiperExterior .swiper-button-next::after,
+.swiperExterior .swiper-button-prev::after {
+    font-size: 18px !important;
+    z-index: 20;
+}
+
+.swiperExterior .swiper-slide {
+    height: auto;
+}
+
+.box_iamge {
+    height: 450px;
+
+    @media screen and (max-width: 600px) {
+        height: auto;
+    }
+}

@@ -1,0 +1,16 @@
+// utilities imports
+@import "utilities/variables", "utilities/mixins",
+  "utilities/classes";
+
+// base imports
+@import "base/reset", "base/typography", "base/global";
+
+// layout imports
+@import  "layout/header", "layout/footer", "layout/sidebar",
+  "layout/forms";
+
+// components imports
+@import "components/buttons", "components/slider", "components/card", "components/spinner";
+
+// pages imports
+@import "pages/home","pages/newcars","pages/profile","pages/brandcar","pages/news","pages/installment","pages/carinfo" ,"pages/login","pages/bookcar", "pages/serviceCenter","pages/confirmbooking","pages/thanks", "pages/news-details", "pages/compare", "pages/faq"; 

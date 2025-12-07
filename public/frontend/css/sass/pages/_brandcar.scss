@@ -1,0 +1,32 @@
+.banner_brand_logo {
+    position: absolute;
+    right: 0;
+    top: -50%;
+    z-index: 9;
+    height: 170px;
+
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16) !important;
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
+   
+
+    @media(max-width: 1024px) {
+        // width: 50px;
+        // top: -12%;
+        // height: 50px;
+    height: 100px;
+    padding: 20px;
+    top: -40%;
+
+    }
+
+}
+
+.div_newcar {
+    margin-left: -.5rem;
+    margin-right: -.5rem;
+    display: flex;
+    flex-wrap: wrap;
+
+}

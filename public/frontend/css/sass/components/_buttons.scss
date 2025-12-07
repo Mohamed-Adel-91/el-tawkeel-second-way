@@ -1,0 +1,25 @@
+/* ====================================== _____________ Buttons Styles _____________ ====================================== */
+.form-button {
+        background-color: #d03b37;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: .375rem;
+        border: 1px solid #d03b37;
+        padding: .25rem 2rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 500;
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity));
+        transition-property: all;
+        transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+        transition-duration: .15s;
+    }
+
+    .form-button:hover {
+        color: #d03b37;
+        --tw-bg-opacity: 1;
+        background-color: rgb(255 255 255/var(--tw-bg-opacity))
+    }
+/* ====================================== _____________ Buttons Styles _____________ ====================================== */

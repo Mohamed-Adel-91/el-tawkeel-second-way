@@ -1,0 +1,108 @@
+.thanks_section {
+    background: linear-gradient(0deg, #FFF 0%, #EAEAEA 100%);
+    padding: 70px 0;
+
+    @media (max-width: 991px) {
+        padding: 40px 0;
+    }
+
+    .trim_title {
+        color: #131313;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 500;
+        padding-bottom: 40px;
+
+        @media (max-width: 768px) {
+            padding-bottom: 20px;
+        }
+    }
+
+    .trim_title2 {
+        color: #131313;
+        font-size: 1.875rem;
+        font-weight: 500;
+        padding-bottom: 40px;
+        text-align: center;
+        @media (max-width: 768px) {
+            padding-bottom: 20px;
+        }
+    }
+
+    .trim_title3 {
+        color: #4C4C4C;
+        text-align: center;
+        font-size: 1.563rem;
+        font-weight: 300;
+
+    }
+
+    .trim_title_num {
+        width: 30px;
+        height: 30px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 1px solid #000000;
+        font-size: 1.4rem;
+        color: #000;
+    }
+
+    .form-button {
+        border-radius: .375rem;
+        color: white;
+
+        &:hover {
+            color: #d03b37 !important;
+            background-color: white;
+        }
+    }
+
+    img {
+        height: 371px;
+        object-fit: cover;
+        margin: auto;
+
+        @media (max-width: 991px) {
+            height: 200px;
+        }
+    }
+
+    .allbuttons {
+        margin-top: 70px;
+        @media (max-width: 768px) {
+                    margin-top: 40px;
+
+        }
+        a {
+            &:first-of-type {
+                @media (max-width: 768px) {
+                    margin-bottom: 1.5rem;
+                    padding: 0.5rem 0.75rem;
+                }
+            }
+
+            &:last-of-type {
+                @media (max-width: 768px) {
+                    width: 100%;
+                }
+            }
+        }
+
+        .services_section_card_body_button {
+            &:hover {
+                background-color: #d03b37;
+                color: white;
+                border-color: #d03b37;
+            }
+        }
+    }
+}
+
+.installmenSection img {
+    height: 100% !important;
+    width: 100% !important;
+    object-fit: cover;
+    
+}

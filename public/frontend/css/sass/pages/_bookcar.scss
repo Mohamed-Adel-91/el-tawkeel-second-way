@@ -1,0 +1,366 @@
+.book_car {
+    .trim_div {
+        padding: 0 2rem;
+        color: #000;
+
+        .trim_title {
+            text-align: center;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .6rem;
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #000000;
+
+            .trim_title_num {
+                width: 30px;
+                height: 30px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                border: 1px solid #000000;
+                font-size: 1.4rem;
+                color: #000;
+
+            }
+
+            .trim_title_desc {
+                border-color: #000;
+                color: #000;
+            }
+        }
+
+        .trim_sub {
+            color: #000;
+        }
+
+
+        .trim_trim_text {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .trim_trim_policy {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                color: #707070;
+                position: relative;
+                font-size: 1rem;
+                -webkit-padding-start: 2rem;
+                padding-inline-start: 2rem;
+                margin-bottom: .75rem;
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    right: 0;
+                    top: .25rem;
+                    width: 1.25rem;
+                    height: 1.25rem;
+                    background-image: url("../../..//public/frontend/img/homepage/exclamation.svg");
+                    background-repeat: no-repeat;
+                    background-position: 50%;
+                    background-size: contain;
+                }
+            }
+        }
+
+        .trim_name {
+            padding: .25rem 1.5rem;
+            border-radius: 5px;
+            border: 1px solid #b9b9b9;
+            font-size: 1rem;
+            color: #707070;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                border-color: #d03b37;
+                color: #d03b37;
+            }
+        }
+
+        .bookform .select-options,
+        .bookform .select-options span {
+            color: rgb(51, 51, 51);
+            font-weight: 300;
+        }
+
+        .bookform .select-options {
+            border-radius: 0.375rem;
+        }
+
+        .form_groupInput {
+            position: relative;
+            margin-bottom: 1.25rem;
+
+            .form_group_checkbox {
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+                width: 100%;
+                max-width: 100%;
+                font-weight: 300;
+
+                input {
+                    width: 20px;
+                    height: 20px;
+                    -webkit-appearance: none;
+                    border: 1px solid #707070;
+                    border-radius: 50%;
+                    outline: none;
+                    box-shadow: inset 0 0 5px 0 #d03b37;
+                    cursor: pointer;
+                }
+
+                input:checked::before {
+                    content: "";
+                    display: block;
+                    width: 60%;
+                    height: 60%;
+                    margin: 20% auto;
+                    border-radius: 50%;
+                    background: #d03b37;
+                }
+            }
+        }
+    }
+
+    .form_group {
+        position: relative;
+        margin-bottom: 1.25rem;
+    }
+
+    .form_group_control,
+    .form_group_select {
+        width: 100%;
+        padding: .375rem .75rem;
+        background-color: transparent;
+        border: 1px solid #707070;
+
+        border-radius: .25rem;
+        height: auto;
+        transition: all .3s ease-in-out;
+        text-align: right;
+        font-size: .9rem;
+        font-weight: 300;
+        &::placeholder {
+    color: #232323;
+
+        }
+    }
+
+    .form_group_label {
+        color: #000;
+        position: absolute;
+        margin: 0;
+        padding: 0 1.375rem;
+        transition: all .3s ease-in-out;
+        top: 1.1rem;
+        right: 0;
+        transform: translateY(-50%);
+        pointer-events: none;
+        background-color: transparent;
+        font-weight: 300;
+    }
+
+    .form_group_control:focus+.form_group_label,
+    .form_group_control:not(:placeholder-shown)+.form_group_label {
+        top: 0.05rem;
+        padding: 0;
+        right: 1.5rem;
+        font-size: 0.8rem;
+        background-color: #ececec;
+    }
+
+    .form_group_invalid {
+        font-size: 1rem;
+        color: #d03b37;
+        margin-bottom: 0;
+    }
+
+    .dragdrop {
+        position: relative;
+        -webkit-box-align: center;
+        border: 2px dashed rgb(6, 88, 194);
+        border-radius: 5px;
+        cursor: pointer;
+        -webkit-box-flex: 0;
+        flex-direction: column !important;
+        border-color: #707070 !important;
+        fill: #b9b9b9 !important;
+        max-width: 100% !important;
+        min-width: 100% !important;
+        width: 100% !important;
+        height: 125px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .dragdrop>div {
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 0 !important;
+        transition: all .3s ease-in-out;
+        -webkit-box-pack: justify;
+    }
+
+    .form_group_select {
+        background-color: #ececec;
+        appearance: none;
+        background-image: url("../../..//public/frontend/img/homepage/chevron-down.svg");
+        background-repeat: no-repeat;
+        background-position: left .75rem center;
+        background-size: 16px 12px;
+        border: 1px solid #d03b37;
+        border-radius: .25rem;
+        height: auto;
+        transition: all .3s ease-in-out;
+        text-align: right;
+        font-size: .9rem;
+        font-weight: 300;
+        width: 100%;
+        padding: .375rem .75rem;
+    }
+
+    .form_group_select option {
+        color: #232323;
+        font-size: .9rem;
+    }
+
+    .form_group_control__payment {
+        padding-left: 2.5rem;
+        font-weight: 700;
+        background-color: #ececec;
+    }
+
+    .form_group_pound,
+    .form_group_precent {
+        position: absolute;
+        left: 6%;
+        top: 6px;
+        font-size: 1rem;
+        font-weight: 700;
+        z-index: 2;
+    }
+
+    .tirms_cond {
+        background-color: #fff;
+        padding: 1rem 1.25rem;
+        width: 100%;
+        height: 200px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+        border-radius: 5px;
+    }
+
+    .form_group_check2 {
+        display: flex;
+        gap: .5rem;
+    }
+
+    .form_group_check2 input {
+        width: 25px;
+        height: 25px;
+    }
+
+    .form-button {
+        background-color: #d03b37;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: .375rem;
+        border: 1px solid #d03b37;
+        padding: .25rem 2rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 500;
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity));
+        transition-property: all;
+        transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+        transition-duration: .15s;
+    }
+
+    .form-button:hover {
+        color: #d03b37;
+        --tw-bg-opacity: 1;
+        background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    }
+
+    .bookcar-color-swiper .swiper-slide {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .bookcar-color-swiper .swiper-slide::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 15px;
+        height: 15px;
+        transform: translate(-50%, -50%);
+        background-image: var(--check-icon);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 15px 15px;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+        z-index: 10;
+    }
+
+    .bookcar-color-swiper .swiper-slide.bookcar-active::before {
+        opacity: 1;
+        transition: 0.3s ease-in-out;
+    }
+
+
+    .bookcar-color-swiper .swiper-slide img {
+        border-radius: 50%;
+    }
+
+    .main-color {
+        color: #d03b37;
+    }
+
+    .menucompoent {
+        li {
+            font-size: 1rem;
+        }
+
+        .custom-dropdown-btn {
+            width: 100%;
+            background-color: #fff;
+            border: 1px solid #ffffff;
+            /* اللون الأساسي */
+            border-radius: 6px;
+            padding: 0.5rem 1.5rem 0.5rem 1rem;
+            /* top right bottom left */
+            text-align: right;
+            font-size: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.13) !important;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .custom-dropdown-btn:hover,
+        .custom-dropdown-btn:focus {
+            border-color: #D03B37;
+            /* لون الهوفر */
+            outline: none;
+        }
+
+    }
+}

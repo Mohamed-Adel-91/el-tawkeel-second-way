@@ -1,0 +1,164 @@
+.confirm_booking {
+    background: #ECECEC !important;
+
+    .banner_section_background {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 50%;
+        background: #B1BAC3 !important;
+
+        @media (max-width:1024px) {
+            height: 100%;
+        }
+    }
+
+    .banner_section_logo {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 170px;
+        padding: 1rem;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width:1024px) {
+            right: 10%;
+            top: 80%;
+        }
+
+        @media (max-width: 568px) {
+            display: none;
+        }
+
+    }
+
+    .Car_banner_title {
+        text-align: center;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .6rem;
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: #131313;
+
+        .span1 {
+            width: 30px;
+            height: 30px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            border: 1px solid #131313;
+            font-size: 1.4rem;
+
+        }
+    }
+
+    .car_imagee img {
+        width: 640px;
+        height: 360px;
+        background-size: cover;
+
+        @media (max-width:1024px) {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+.card_confirm {
+    background-color: #ececec !important;
+
+    .mainColor {
+        color: #d03b37 !important;
+    }
+
+    h5.text-md.mb-3 {
+        color: #232323;
+
+        font-size: 2.188rem;
+        font-weight: 500;
+        margin-bottom: 2rem !important;
+    }
+}
+
+.payment_confirm {
+    background-color: #ececec !important;
+    padding-bottom: 80px;
+
+    @media (max-width: 991px) {
+        padding-bottom: 100px;
+        padding-top: 0;
+        .flex-div {
+            flex-wrap: nowrap;
+        }
+    }
+
+    .mainColor {
+        color: #d03b37 !important;
+    }
+
+    .form_group {
+        position: relative;
+        margin-bottom: 1.25rem;
+
+        .form_group_checkbox {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            width: 100%;
+            max-width: 100%;
+
+            img {
+                height: 40px;
+                width: 100%;
+                object-fit: contain;
+                  @media (max-width: 500px) {
+        height: 35px;
+    }
+            }
+
+            input {
+                width: 20px;
+                height: 20px;
+                -webkit-appearance: none;
+                border: 1px solid #d03b37;
+                border-radius: 50%;
+                outline: none;
+                box-shadow: inset 0 0 5px 0 #d03b37;
+                cursor: pointer;
+            }
+
+            input:before {
+                content: "";
+                display: block;
+                width: 60%;
+                height: 60%;
+                margin: 20% auto;
+                border-radius: 50%;
+            }
+
+            input:checked:before {
+                background: #d03b37;
+            }
+        }
+    }
+
+    .form-button {
+        border-radius: .375rem;
+
+        &:hover {
+            color: #fff !important;
+            background-color: #d03b37;
+        }
+    }
+}

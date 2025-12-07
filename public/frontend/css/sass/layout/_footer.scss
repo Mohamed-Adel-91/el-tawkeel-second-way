@@ -1,0 +1,261 @@
+/* ====================================== _____________ Footer Styles _____________ ====================================== */
+.footerground {
+    background-color: #232323 !important;
+
+
+    .newsletter_form_group {
+        position: relative;
+        width: 90%;
+        margin-bottom: .5rem;
+
+        .form-input {
+
+            padding: 8px 15px 8px 55px;
+            background-color: transparent;
+
+        }
+
+        .form-input:focus {
+            .newsletter_form_group_button {
+                color: #d03b37;
+            }
+        }
+
+        .newsletter_form_group_button {
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #fff;
+            width: 15%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px 15px;
+            transition: all .3s ease-in-out;
+        }
+    }
+
+    .hover-link {
+        position: relative;
+        transition: all .3s ease-in-out;
+        padding-bottom: 4px;
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+    }
+
+    .hover-link:before {
+        position: absolute;
+        content: "";
+        right: 0;
+        bottom: 0;
+        width: 0;
+        height: 1px;
+        background-color: #d03b37;
+        transition: all .3s ease-in-out;
+    }
+
+    .hover-link:hover span {
+        color: #d03b37;
+    }
+
+    .hover-link:hover:before {
+        width: 80%;
+    }
+
+
+    .footerground_flex>div:first-of-type {
+        flex: 0 0 35%;
+        max-width: 35%
+    }
+
+    @media(max-width: 576px) {
+        .footerground_flex>div:first-of-type {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-bottom: 1.5rem
+        }
+
+        .footerground_flex>div:first-of-type:after {
+            display: none
+        }
+    }
+
+    @media(min-width: 576px)and (max-width:767px) {
+        .footerground_flex>div:first-of-type {
+            flex: 0 0 50%;
+            max-width: 50%;
+            margin-bottom: 1.5rem
+        }
+    }
+
+    @media(min-width: 768px)and (max-width:1024px) {
+        .footerground_flex>div:first-of-type {
+            flex: 0 0 50%;
+            max-width: 50%;
+            margin-bottom: 1.5rem
+        }
+    }
+
+    @media(min-width: 1024px)and (max-width:1280px) {
+        .footerground_flex>div:first-of-type {
+            flex: 0 0 60%;
+            max-width: 60%;
+            margin-bottom: 1.5rem
+        }
+    }
+
+    .footerground_flex>div:nth-of-type(2) {
+        flex: 0 0 25%;
+        max-width: 25%
+    }
+
+    @media(max-width: 576px) {
+        .footerground_flex>div:nth-of-type(2) {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-bottom: 1.5rem
+        }
+
+        .footerground_flex>div:nth-of-type(2):after {
+            display: none
+        }
+    }
+
+    @media(min-width: 576px)and (max-width:767px) {
+        .footerground_flex>div:nth-of-type(2) {
+            flex: 0 0 50%;
+            max-width: 50%;
+            margin-bottom: 1.5rem
+        }
+
+        .footerground_flex>div:nth-of-type(2):after {
+            display: none
+        }
+    }
+
+    @media(min-width: 768px)and (max-width:1024px) {
+        .footerground_flex>div:nth-of-type(2) {
+            flex: 0 0 50%;
+            max-width: 50%;
+            margin-bottom: 1.5rem
+        }
+
+        .footerground_flex>div:nth-of-type(2):after {
+            display: none
+        }
+    }
+
+    @media(min-width: 1024px)and (max-width:1280px) {
+        .footerground_flex>div:nth-of-type(2) {
+            flex: 0 0 40%;
+            max-width: 40%;
+            margin-bottom: 1.5rem
+        }
+
+        .footerground_flex>div:nth-of-type(2):after {
+            display: none
+        }
+    }
+
+    .footerground_flex>div:nth-of-type(3),
+    .footerground_flex>div:nth-of-type(4) {
+        flex: 0 0 14%;
+        max-width: 14%
+    }
+
+    @media(max-width: 576px) {
+
+        .footerground_flex>div:nth-of-type(3),
+        .footerground_flex>div:nth-of-type(4) {
+            flex: 0 0 50%;
+            max-width: 50%;
+            margin-bottom: 1.5rem
+        }
+    }
+
+    @media(min-width: 576px)and (max-width:767px) {
+
+        .footerground_flex>div:nth-of-type(3),
+        .footerground_flex>div:nth-of-type(4) {
+            flex: 0 0 33.3333333333%;
+            max-width: 33.3333333333%
+        }
+    }
+
+    @media(min-width: 768px)and (max-width:1024px) {
+
+        .footerground_flex>div:nth-of-type(3),
+        .footerground_flex>div:nth-of-type(4) {
+            flex: 0 0 33.3333333333%;
+            max-width: 33.3333333333%
+        }
+    }
+
+    @media(min-width: 1024px)and (max-width:1280px) {
+
+        .footerground_flex>div:nth-of-type(3),
+        .footerground_flex>div:nth-of-type(4) {
+            flex: 0 0 33.3333333333%;
+            max-width: 33.3333333333%
+        }
+    }
+
+    .footerground_flex>div:last-of-type {
+        flex: 0 0 12%;
+        max-width: 12%
+    }
+
+    @media(max-width: 576px) {
+        .footerground_flex>div:last-of-type {
+            flex: 0 0 100%;
+            max-width: 100%
+        }
+    }
+
+    @media(min-width: 576px)and (max-width:767px) {
+        .footerground_flex>div:last-of-type {
+            flex: 0 0 33.3333333333%;
+            max-width: 33.3333333333%
+        }
+    }
+
+    @media(min-width: 768px)and (max-width:1024px) {
+        .footerground_flex>div:last-of-type {
+            flex: 0 0 33.3333333333%;
+            max-width: 33.3333333333%
+        }
+    }
+
+    @media(min-width: 1024px)and (max-width:1280px) {
+        .footerground_flex>div:last-of-type {
+            flex: 0 0 33.3333333333%;
+            max-width: 33.3333333333%
+        }
+    }
+
+    .footerground_flex>div:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 140px;
+        width: 1px;
+        background-color: hsla(0, 0%, 100%, .29);
+        z-index: 2;
+    }
+
+    .social_icons li a:hover svg path {
+        fill: #d03b37;
+        transition: all .3s ease-in-out;
+    }
+
+}
+
+.copyright p span {
+    color: #707070;
+}
+
+/* ====================================== _____________ Footer Styles _____________ ====================================== */

@@ -1,0 +1,179 @@
+/* ====================================== _____________ Classes Styles _____________ ====================================== */
+// == Container //
+.leftContainer {
+  margin-left: auto;
+  padding: 0 15px;
+  padding-right: 0;
+overflow: hidden;
+  @include for_phone {
+    width: 100%;
+    padding-right: 15px;
+    margin-left: auto;
+  }
+
+  @include for_miniTb {
+    width: calc(540px + ((100vw - 540px) / 2));
+    margin: auto;
+    padding: unset;
+  }
+
+  @include for_tablet {
+    width: calc(720px + ((100vw - 720px) / 2));
+    margin: auto;
+    padding: unset;
+  }
+
+  @include for_miniLt {
+    width: calc(960px + ((100vw - 960px) / 2));
+    margin: auto;
+    padding: unset;
+  }
+
+  @include for_labtop {
+    width: calc(1140px + ((100vw - 1140px) / 2));
+    margin: auto;
+    padding: unset;
+  }
+}
+
+.rightContainer {
+  margin-right: auto;
+  padding: 0 15px;
+  padding-left: 0;
+  overflow: hidden;
+  @include for_phone {
+    width: 100%;
+    padding-left: 15px;
+    margin-right: auto;
+  }
+
+  @include for_miniTb {
+    width: calc(540px + ((100vw - 540px) / 2));
+    padding-left: 15px;
+    margin-right: auto;
+  }
+
+  @include for_tablet {
+    width: calc(720px + ((100vw - 720px) / 2));
+  }
+
+  @include for_miniLt {
+    width: calc(960px + ((100vw - 960px) / 2));
+  }
+
+  @include for_labtop {
+    width: calc(1140px + ((100vw - 1140px) / 2));
+  }
+}
+
+// == Container //
+
+// == Texts //
+p,
+.p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #707070;
+    margin-bottom: 1rem;
+}
+
+
+// == Texts //
+
+// == Links //
+a,
+.a,
+.link {
+  font-size: $paragraphFont;
+  font-weight: $fontRegular;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+// == Links //
+
+// == Img //
+.img_cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.zoomIn {
+  overflow: hidden;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+
+  img {
+    transition: $slTransition;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.050);
+    }
+  }
+}
+
+.zoomOut {
+  overflow: hidden;
+  margin: 0;
+
+  img {
+    transition: $slTransition;
+  }
+
+  &:hover {
+    img {
+      transform: scale(0.925);
+    }
+  }
+}
+.custom-section {
+  padding: 40px 0;
+    position: relative;
+}
+
+
+  .custom_title {
+        text-align: center;
+    font-size: 1.8rem;
+    color: black;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    position: relative;
+
+    span{
+    position: relative;
+    }
+
+
+    span::after{
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 1.5px;
+    background-color: #d03b37;
+    }
+  }
+      .flex-div {
+        margin-left: -.5rem;
+        margin-right: -.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        @media (max-width: 568px) {
+            justify-content: center;
+        }
+        
+    }
+
+    .grayBgSection {
+    background-color: #ececec !important;
+}
+// == Img //
+/* ====================================== _____________ Classes Styles _____________ ====================================== */

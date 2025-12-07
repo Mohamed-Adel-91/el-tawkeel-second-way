@@ -1,0 +1,186 @@
+/* ====================================== _____________ Mixin Styles _____________ ====================================== */
+//prefixer mixin //
+@mixin prefixer($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value;
+  }
+
+  #{$property}: $value;
+}
+
+//prefixer mixin //
+
+//overlay mixin //
+@mixin overlay {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: $blkColor, $alpha: .45);
+  }
+}
+
+//overlay mixin //
+
+//Hover mixin //
+@mixin linkHover {
+  transition: $transition;
+
+  // &:hover {
+  //   color: $mainColor
+  // }
+}
+
+@mixin hoverLink {
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: black;
+  position: relative;
+  display: inline-block;
+  padding: 0 0.5rem;
+  margin-bottom: 0;
+  transition: $transition;
+
+  @include for_tablet_ph() {
+    margin-bottom: 7px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    width: 25px;
+    background-color: black;
+    height: 1.5px;
+    transform: translateX(-50%);
+    left: 50%;
+    opacity: 0;
+    transition: $transition;
+
+    @media (min-width: 992px) {
+      padding-right: 0.75rem;
+      padding-left: 0.75rem;
+    }
+  }
+
+  &:hover {
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+
+//Hover mixin //
+
+// animation mixin //
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
+
+// Usage _____
+// @include keyframes(slide-down) {
+//     0% { opacity: 1; }
+//     90% { opacity: 0; }
+// }
+
+// .element {
+//     width: 100px;
+//     height: 100px;
+//     background: black;
+//     @include animation('slide-down 5s 3');
+// }
+
+// animation mixin //
+
+// Media  //
+@mixin for_phone {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin for_miniTb {
+  @media (min-width: 576px) and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin for_miniTb_ph {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin for_tablet {
+  @media (min-width: 768px) and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin for_tablet_ph {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin for_miniLt {
+  @media (min-width: 992px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin for_labtop {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin for_pc {
+  @media (min-width: 1650px) {
+    @content;
+  }
+}
+
+//Usage //
+// .element {
+//   font-size: 2rem;
+//   @include for-phone() {
+//     font-size: 1rem;
+//   }
+// }
+//Usage //
+
+// Media  //
+
+/* ====================================== _____________ Mixin Styles _____________ ====================================== */

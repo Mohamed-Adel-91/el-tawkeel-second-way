@@ -1,0 +1,145 @@
+<mxfile host="65bd71144e">
+    <diagram name="ERD" id="arDUQlFCKlD1TQdArcFe">
+        <mxGraphModel dx="1294" dy="2088" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="table_news_letter" value="&lt;div style=&#39;font-weight:bold;text-align:center&#39;&gt;news_letter&lt;/div&gt;&lt;ul style=&#39;margin:0;padding-left:15px&#39;&gt;&lt;li&gt;id (PK)&lt;/li&gt;&lt;li&gt;email&lt;/li&gt;&lt;li&gt;created_at&lt;/li&gt;&lt;li&gt;updated_at&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc" parent="1" vertex="1">
+                    <mxGeometry x="10" y="-70" width="210" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="table_settings" value="&lt;div style=&#39;font-weight:bold;text-align:center&#39;&gt;settings&lt;/div&gt;&lt;ul style=&#39;margin:0;padding-left:15px&#39;&gt;&lt;li&gt;id (PK)&lt;/li&gt;&lt;li&gt;email&lt;/li&gt;&lt;li&gt;slogan (json)&lt;/li&gt;&lt;li&gt;address (json)&lt;/li&gt;&lt;li&gt;phone&lt;/li&gt;&lt;li&gt;hotline&lt;/li&gt;&lt;li&gt;location&lt;/li&gt;&lt;li&gt;facebook&lt;/li&gt;&lt;li&gt;linkedin&lt;/li&gt;&lt;li&gt;youtube&lt;/li&gt;&lt;li&gt;instagram&lt;/li&gt;&lt;li&gt;created_at&lt;/li&gt;&lt;li&gt;updated_at&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc" parent="1" vertex="1">
+                    <mxGeometry x="250" y="-70" width="220" height="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="table_seo_metas" value="&lt;div style=&#39;font-weight:bold;text-align:center&#39;&gt;seo_metas&lt;/div&gt;&lt;ul style=&#39;margin:0;padding-left:15px&#39;&gt;&lt;li&gt;id (PK)&lt;/li&gt;&lt;li&gt;page (unique)&lt;/li&gt;&lt;li&gt;title (json)&lt;/li&gt;&lt;li&gt;description (json)&lt;/li&gt;&lt;li&gt;keywords (json)&lt;/li&gt;&lt;li&gt;og_title (json)&lt;/li&gt;&lt;li&gt;og_description (json)&lt;/li&gt;&lt;li&gt;canonical&lt;/li&gt;&lt;li&gt;created_at&lt;/li&gt;&lt;li&gt;updated_at&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7" parent="1" vertex="1">
+                    <mxGeometry x="480" y="-60" width="220" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="table_activity_log" value="&lt;div style=&#39;font-weight:bold;text-align:center&#39;&gt;activity_log&lt;/div&gt;&lt;ul style=&#39;margin:0;padding-left:15px&#39;&gt;&lt;li&gt;id (PK)&lt;/li&gt;&lt;li&gt;log_name&lt;/li&gt;&lt;li&gt;description&lt;/li&gt;&lt;li&gt;subject_type&lt;/li&gt;&lt;li&gt;subject_id&lt;/li&gt;&lt;li&gt;event&lt;/li&gt;&lt;li&gt;causer_type&lt;/li&gt;&lt;li&gt;causer_id&lt;/li&gt;&lt;li&gt;properties (json)&lt;/li&gt;&lt;li&gt;batch_uuid&lt;/li&gt;&lt;li&gt;created_at&lt;/li&gt;&lt;li&gt;updated_at&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc" parent="1" vertex="1">
+                    <mxGeometry x="10" y="60" width="220" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="table_static_sentences" value="&lt;div style=&#39;font-weight:bold;text-align:center&#39;&gt;static_sentences&lt;/div&gt;&lt;ul style=&#39;margin:0;padding-left:15px&#39;&gt;&lt;li&gt;id (PK)&lt;/li&gt;&lt;li&gt;key (unique)&lt;/li&gt;&lt;li&gt;value (json)&lt;/li&gt;&lt;li&gt;created_at&lt;/li&gt;&lt;li&gt;updated_at&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4" parent="1" vertex="1">
+                    <mxGeometry x="260" y="250" width="220" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="table_admins" value="&lt;div style=&#39;font-weight:bold;text-align:center&#39;&gt;admins&lt;/div&gt;&lt;ul style=&#39;margin:0;padding-left:15px&#39;&gt;&lt;li&gt;id (PK)&lt;/li&gt;&lt;li&gt;first_name&lt;/li&gt;&lt;li&gt;last_name&lt;/li&gt;&lt;li&gt;email (unique)&lt;/li&gt;&lt;li&gt;password&lt;/li&gt;&lt;li&gt;mobile&lt;/li&gt;&lt;li&gt;profile_picture&lt;/li&gt;&lt;li&gt;role&lt;/li&gt;&lt;li&gt;created_at&lt;/li&gt;&lt;li&gt;updated_at&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc" parent="1" vertex="1">
+                    <mxGeometry x="800" y="130" width="220" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="table_admin_otps" value="&lt;div style=&#39;font-weight:bold;text-align:center&#39;&gt;admin_otps&lt;/div&gt;&lt;ul style=&#39;margin:0;padding-left:15px&#39;&gt;&lt;li&gt;id (PK)&lt;/li&gt;&lt;li&gt;admin_id (FK)&lt;/li&gt;&lt;li&gt;otp_code&lt;/li&gt;&lt;li&gt;expires_at&lt;/li&gt;&lt;li&gt;created_at&lt;/li&gt;&lt;li&gt;updated_at&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc" parent="1" vertex="1">
+                    <mxGeometry x="500" y="240" width="200" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="table_users" value="&lt;div style=&#39;font-weight:bold;text-align:center&#39;&gt;users&lt;/div&gt;&lt;ul style=&#39;margin:0;padding-left:15px&#39;&gt;&lt;li&gt;id (PK)&lt;/li&gt;&lt;li&gt;full_name&lt;/li&gt;&lt;li&gt;nickname&lt;/li&gt;&lt;li&gt;email (unique)&lt;/li&gt;&lt;li&gt;mobile (unique)&lt;/li&gt;&lt;li&gt;password&lt;/li&gt;&lt;li&gt;created_at&lt;/li&gt;&lt;li&gt;updated_at&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7" parent="1" vertex="1">
+                    <mxGeometry x="1535" y="1820" width="200" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="table_banks" value="&lt;div style=&#39;font-weight:bold;text-align:center&#39;&gt;banks&lt;/div&gt;&lt;ul style=&#39;margin:0;padding-left:15px&#39;&gt;&lt;li&gt;id (PK)&lt;/li&gt;&lt;li&gt;name (unique)&lt;/li&gt;&lt;li&gt;created_at&lt;/li&gt;&lt;li&gt;updated_at&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc" parent="1" vertex="1">
+                    <mxGeometry x="1545" y="1640" width="180" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="table_installment_programs" value="&lt;div style=&#39;font-weight:bold;text-align:center&#39;&gt;installment_programs&lt;/div&gt;&lt;ul style=&#39;margin:0;padding-left:15px&#39;&gt;&lt;li&gt;id (PK)&lt;/li&gt;&lt;li&gt;bank_id (FK)&lt;/li&gt;&lt;li&gt;name&lt;/li&gt;&lt;li&gt;interest_rate_per_year&lt;/li&gt;&lt;li&gt;applicable_to&lt;/li&gt;&lt;li&gt;created_at&lt;/li&gt;&lt;li&gt;updated_at&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4" parent="1" vertex="1">
+                    <mxGeometry x="1520" y="1305" width="230" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="table_brands" value="&lt;div style=&#39;font-weight:bold;text-align:center&#39;&gt;brands&lt;/div&gt;&lt;ul style=&#39;margin:0;padding-left:15px&#39;&gt;&lt;li&gt;id (PK)&lt;/li&gt;&lt;li&gt;name&lt;/li&gt;&lt;li&gt;logo&lt;/li&gt;&lt;li&gt;banner&lt;/li&gt;&lt;li&gt;description&lt;/li&gt;&lt;li&gt;created_at&lt;/li&gt;&lt;li&gt;updated_at&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc" parent="1" vertex="1">
+                    <mxGeometry x="800" y="560" width="200" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="table_shapes" value="&lt;div style=&#39;font-weight:bold;text-align:center&#39;&gt;shapes&lt;/div&gt;&lt;ul style=&#39;margin:0;padding-left:15px&#39;&gt;&lt;li&gt;id (PK)&lt;/li&gt;&lt;li&gt;name&lt;/li&gt;&lt;li&gt;logo&lt;/li&gt;&lt;li&gt;created_at&lt;/li&gt;&lt;li&gt;updated_at&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc" parent="1" vertex="1">
+                    <mxGeometry x="820" y="420" width="180" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="table_car_models" value="&lt;div style=&#39;font-weight:bold;text-align:center&#39;&gt;car_models&lt;/div&gt;&lt;ul style=&#39;margin:0;padding-left:15px&#39;&gt;&lt;li&gt;id (PK)&lt;/li&gt;&lt;li&gt;brand_id (FK)&lt;/li&gt;&lt;li&gt;shape_id (FK)&lt;/li&gt;&lt;li&gt;name&lt;/li&gt;&lt;li&gt;image&lt;/li&gt;&lt;li&gt;start_price&lt;/li&gt;&lt;li&gt;catalog&lt;/li&gt;&lt;li&gt;created_at&lt;/li&gt;&lt;li&gt;updated_at&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7" parent="1" vertex="1">
+                    <mxGeometry x="440" y="480" width="240" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="table_feature_categories" value="&lt;div style=&#39;font-weight:bold;text-align:center&#39;&gt;feature_categories&lt;/div&gt;&lt;ul style=&#39;margin:0;padding-left:15px&#39;&gt;&lt;li&gt;id (PK)&lt;/li&gt;&lt;li&gt;name&lt;/li&gt;&lt;li&gt;created_at&lt;/li&gt;&lt;li&gt;updated_at&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc" parent="1" vertex="1">
+                    <mxGeometry x="890" y="770" width="200" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="table_features" value="&lt;div style=&#39;font-weight:bold;text-align:center&#39;&gt;features&lt;/div&gt;&lt;ul style=&#39;margin:0;padding-left:15px&#39;&gt;&lt;li&gt;id (PK)&lt;/li&gt;&lt;li&gt;feature_category_id (FK)&lt;/li&gt;&lt;li&gt;name&lt;/li&gt;&lt;li&gt;value&lt;/li&gt;&lt;li&gt;status&lt;/li&gt;&lt;li&gt;created_at&lt;/li&gt;&lt;li&gt;updated_at&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4" parent="1" vertex="1">
+                    <mxGeometry x="610" y="750" width="220" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="table_colors" value="&lt;div style=&#39;font-weight:bold;text-align:center&#39;&gt;colors&lt;/div&gt;&lt;ul style=&#39;margin:0;padding-left:15px&#39;&gt;&lt;li&gt;id (PK)&lt;/li&gt;&lt;li&gt;name&lt;/li&gt;&lt;li&gt;image&lt;/li&gt;&lt;li&gt;created_at&lt;/li&gt;&lt;li&gt;updated_at&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc" parent="1" vertex="1">
+                    <mxGeometry x="310" y="1060" width="200" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="table_car_terms" value="&lt;div style=&#39;font-weight:bold;text-align:center&#39;&gt;car_terms&lt;/div&gt;&lt;ul style=&#39;margin:0;padding-left:15px&#39;&gt;&lt;li&gt;id (PK)&lt;/li&gt;&lt;li&gt;car_model_id (FK)&lt;/li&gt;&lt;li&gt;term_name&lt;/li&gt;&lt;li&gt;price&lt;/li&gt;&lt;li&gt;inventory&lt;/li&gt;&lt;li&gt;reservation_amount&lt;/li&gt;&lt;li&gt;created_at&lt;/li&gt;&lt;li&gt;updated_at&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc" parent="1" vertex="1">
+                    <mxGeometry x="10" y="410" width="260" height="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="table_car_term_feature" value="&lt;div style=&#39;font-weight:bold;text-align:center&#39;&gt;car_term_feature&lt;/div&gt;&lt;ul style=&#39;margin:0;padding-left:15px&#39;&gt;&lt;li&gt;car_term_id (FK)&lt;/li&gt;&lt;li&gt;feature_id (FK)&lt;/li&gt;&lt;li&gt;priority&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7" parent="1" vertex="1">
+                    <mxGeometry x="310" y="760" width="200" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="table_car_term_color" value="&lt;div style=&#39;font-weight:bold;text-align:center&#39;&gt;car_term_color&lt;/div&gt;&lt;ul style=&#39;margin:0;padding-left:15px&#39;&gt;&lt;li&gt;car_term_id (FK)&lt;/li&gt;&lt;li&gt;color_id (FK)&lt;/li&gt;&lt;li&gt;image&lt;/li&gt;&lt;li&gt;created_at&lt;/li&gt;&lt;li&gt;updated_at&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc" parent="1" vertex="1">
+                    <mxGeometry x="300" y="890" width="220" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="table_orders" value="&lt;div style=&#39;font-weight:bold;text-align:center&#39;&gt;orders&lt;/div&gt;&lt;ul style=&#39;margin:0;padding-left:15px&#39;&gt;&lt;li&gt;id (PK)&lt;/li&gt;&lt;li&gt;user_id (FK)&lt;/li&gt;&lt;li&gt;car_term_id (FK)&lt;/li&gt;&lt;li&gt;first_color_id (FK)&lt;/li&gt;&lt;li&gt;second_color_id (FK)&lt;/li&gt;&lt;li&gt;type&lt;/li&gt;&lt;li&gt;cash_method&lt;/li&gt;&lt;li&gt;account_number&lt;/li&gt;&lt;li&gt;insurance_id (FK)&lt;/li&gt;&lt;li&gt;installment_program_id (FK)&lt;/li&gt;&lt;li&gt;installments_count&lt;/li&gt;&lt;li&gt;installment_interval_months&lt;/li&gt;&lt;li&gt;total_price&lt;/li&gt;&lt;li&gt;reservation_amount&lt;/li&gt;&lt;li&gt;down_payment_percent&lt;/li&gt;&lt;li&gt;down_payment_amount&lt;/li&gt;&lt;li&gt;monthly_installment_amount&lt;/li&gt;&lt;li&gt;full_name&lt;/li&gt;&lt;li&gt;phone_number&lt;/li&gt;&lt;li&gt;individual_email&lt;/li&gt;&lt;li&gt;national_id&lt;/li&gt;&lt;li&gt;front_national_id_image&lt;/li&gt;&lt;li&gt;back_national_id_image&lt;/li&gt;&lt;li&gt;bank_statement&lt;/li&gt;&lt;li&gt;hr_letter&lt;/li&gt;&lt;li&gt;company_name&lt;/li&gt;&lt;li&gt;legal_representative_phone_number&lt;/li&gt;&lt;li&gt;company_email&lt;/li&gt;&lt;li&gt;commercial_registration_number&lt;/li&gt;&lt;li&gt;commercial_registration_image&lt;/li&gt;&lt;li&gt;tax_card_number&lt;/li&gt;&lt;li&gt;tax_card_image&lt;/li&gt;&lt;li&gt;agreed_terms&lt;/li&gt;&lt;li&gt;status&lt;/li&gt;&lt;li&gt;created_at&lt;/li&gt;&lt;li&gt;updated_at&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4" parent="1" vertex="1">
+                    <mxGeometry x="570" y="990" width="360" height="860" as="geometry"/>
+                </mxCell>
+                <mxCell id="table_service_centers" value="&lt;div style=&#39;font-weight:bold;text-align:center&#39;&gt;service_centers&lt;/div&gt;&lt;ul style=&#39;margin:0;padding-left:15px&#39;&gt;&lt;li&gt;id (PK)&lt;/li&gt;&lt;li&gt;brand_id (FK)&lt;/li&gt;&lt;li&gt;name&lt;/li&gt;&lt;li&gt;location&lt;/li&gt;&lt;li&gt;address&lt;/li&gt;&lt;li&gt;phone&lt;/li&gt;&lt;li&gt;city&lt;/li&gt;&lt;li&gt;created_at&lt;/li&gt;&lt;li&gt;updated_at&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc" parent="1" vertex="1">
+                    <mxGeometry x="1040" y="430" width="260" height="270" as="geometry"/>
+                </mxCell>
+                <mxCell id="table_insurance" value="&lt;div style=&#39;font-weight:bold;text-align:center&#39;&gt;insurance&lt;/div&gt;&lt;ul style=&#39;margin:0;padding-left:15px&#39;&gt;&lt;li&gt;id (PK)&lt;/li&gt;&lt;li&gt;insurance_company&lt;/li&gt;&lt;li&gt;program_name&lt;/li&gt;&lt;li&gt;coverage_rate&lt;/li&gt;&lt;li&gt;annual_price&lt;/li&gt;&lt;li&gt;monthly_payment&lt;/li&gt;&lt;li&gt;applicable_to&lt;/li&gt;&lt;li&gt;created_at&lt;/li&gt;&lt;li&gt;updated_at&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4" parent="1" vertex="1">
+                    <mxGeometry x="1010" y="2000" width="260" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="table_insurance_features" value="&lt;div style=&#39;font-weight:bold;text-align:center&#39;&gt;insurance_features&lt;/div&gt;&lt;ul style=&#39;margin:0;padding-left:15px&#39;&gt;&lt;li&gt;id (PK)&lt;/li&gt;&lt;li&gt;insurance_id (FK)&lt;/li&gt;&lt;li&gt;feature_name&lt;/li&gt;&lt;li&gt;feature_value&lt;/li&gt;&lt;li&gt;created_at&lt;/li&gt;&lt;li&gt;updated_at&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7" parent="1" vertex="1">
+                    <mxGeometry x="530" y="2010" width="280" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="table_insurance_orders" value="&lt;div style=&#39;font-weight:bold;text-align:center&#39;&gt;insurance_orders&lt;/div&gt;&lt;ul style=&#39;margin:0;padding-left:15px&#39;&gt;&lt;li&gt;id (PK)&lt;/li&gt;&lt;li&gt;user_id (FK)&lt;/li&gt;&lt;li&gt;car_term_id (FK)&lt;/li&gt;&lt;li&gt;insurance_id (FK)&lt;/li&gt;&lt;li&gt;total_price&lt;/li&gt;&lt;li&gt;full_name&lt;/li&gt;&lt;li&gt;phone_number&lt;/li&gt;&lt;li&gt;individual_email&lt;/li&gt;&lt;li&gt;national_id&lt;/li&gt;&lt;li&gt;front_national_id_image&lt;/li&gt;&lt;li&gt;back_national_id_image&lt;/li&gt;&lt;li&gt;company_name&lt;/li&gt;&lt;li&gt;legal_representative_phone_number&lt;/li&gt;&lt;li&gt;company_email&lt;/li&gt;&lt;li&gt;commercial_registration_number&lt;/li&gt;&lt;li&gt;commercial_registration_image&lt;/li&gt;&lt;li&gt;tax_card_number&lt;/li&gt;&lt;li&gt;tax_card_image&lt;/li&gt;&lt;li&gt;agreed_terms&lt;/li&gt;&lt;li&gt;other_ownership&lt;/li&gt;&lt;li&gt;sale_blocked&lt;/li&gt;&lt;li&gt;chassis_number&lt;/li&gt;&lt;li&gt;car_license_image&lt;/li&gt;&lt;li&gt;car_documentation_image&lt;/li&gt;&lt;li&gt;status&lt;/li&gt;&lt;li&gt;created_at&lt;/li&gt;&lt;li&gt;updated_at&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4" parent="1" vertex="1">
+                    <mxGeometry x="930" y="2270" width="420" height="600" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_admin_otps_admin" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" parent="1" source="table_admin_otps" target="table_admins" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_installment_programs_bank" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" parent="1" source="table_installment_programs" target="table_banks" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_car_models_brand" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" parent="1" source="table_car_models" target="table_brands" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_car_models_shape" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" parent="1" source="table_car_models" target="table_shapes" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_car_terms_model" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" parent="1" source="table_car_terms" target="table_car_models" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_car_term_feature_term" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" parent="1" source="table_car_term_feature" target="table_car_terms" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_car_term_feature_feature" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" parent="1" source="table_car_term_feature" target="table_features" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_car_term_color_term" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" parent="1" source="table_car_term_color" target="table_car_terms" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_car_term_color_color" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" parent="1" source="table_car_term_color" target="table_colors" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_features_category" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" parent="1" source="table_features" target="table_feature_categories" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_orders_user" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" parent="1" source="table_orders" target="table_users" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_orders_car_term" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" parent="1" source="table_orders" target="table_car_terms" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_orders_installment_program" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" parent="1" source="table_orders" target="table_installment_programs" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_service_centers_brand" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" parent="1" source="table_service_centers" target="table_brands" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_insurance_features_insurance" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" parent="1" source="table_insurance_features" target="table_insurance" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_insurance_orders_user" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" parent="1" source="table_insurance_orders" target="table_users" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_insurance_orders_car_term" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" parent="1" source="table_insurance_orders" target="table_car_terms" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_insurance_orders_insurance" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" parent="1" source="table_insurance_orders" target="table_insurance" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_orders_first_color" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" parent="1" source="table_orders" target="table_colors" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_orders_second_color" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" parent="1" source="table_orders" target="table_colors" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_orders_insurance" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" parent="1" source="table_orders" target="table_insurance" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

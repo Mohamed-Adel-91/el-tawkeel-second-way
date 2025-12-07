@@ -1,0 +1,93 @@
+.news-details {
+    padding: 40px 0;
+    position: relative;
+    img {
+        width: 100%;
+    }
+    &_title {
+        text-align: center;
+        font-size: 1.8rem;
+        color: #232323;
+        font-weight: 500;
+        margin-bottom: 2.5rem;
+
+        span {
+            position: relative;
+            display: inline-flex;
+            padding-bottom: 5px;
+
+            &::before {
+                position: absolute;
+                content: "";
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 40%;
+                height: 1.5px;
+                background-color: #d03b37;
+            }
+        }
+    }
+
+    &_content {
+        display: flex;
+        align-items: center;
+        gap: .75rem;
+        padding: 15px 0;
+        &_text {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+        }
+    }
+
+    &_title2 {
+        color: #d03b37 !important;
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-bottom: 1rem;
+        display: none;
+    }
+
+    &_moreData {
+        padding: 20px 0;
+
+        &_title {
+            color: #000;
+            font-size: 1.3rem;
+            margin-bottom: .75rem;
+        }
+
+        &_links {
+            display: inline-flex;
+            flex-wrap: wrap;
+            gap: .5rem;
+
+            &_text {
+                font-size: 1.1rem;
+                color: #d03b37;
+                margin-bottom: 0;
+
+                p {
+                    font-size: 1.1rem;
+                    color: #d03b37;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &_share {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            direction: ltr;
+            gap: .5rem;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.font-eng {
+    font-family: Dubai !important;
+}
