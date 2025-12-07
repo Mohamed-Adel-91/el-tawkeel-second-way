@@ -129,8 +129,8 @@ class ComparisonService
             ->get()
             ->sortBy(function ($cat) {
                 $priority = [
-                    5 => -2,
-                    4 => -1,
+                    4 => -2,
+                    5 => -1,
                 ];
                 return $priority[$cat->id] ?? $cat->name;
             })

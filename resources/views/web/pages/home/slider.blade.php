@@ -3,7 +3,9 @@
                 <div class="swiper-wrapper">
           <div class="swiper-slide">
                         <div class="slide">
-                            <img src="img/homepage/slide2.jpg" alt="banner 1" class="image" />
+                            <img src="img/homepage/slide2.jpg" alt="banner 1" class="image lg:block hidden" />
+                            <img src="img/homepage/Tablet3.jpg" alt="banner 3" class="image lg:hidden md:block hidden" />
+                            <img src="img/homepage/Mobile3.jpg" alt="banner 3" class="image md:hidden block" />
 
                             <div class="overlay"></div>
                         </div>
@@ -11,7 +13,7 @@
                     <div class="swiper-slide">
                         <div class="slide">
                              <img src="img/homepage/Desktop.png" alt="banner 3" class="image lg:block hidden" />
-                            <img src="img/homepage/Tablet.png" alt="banner 3"
+                            <img src="img/homepage/tablet.png" alt="banner 3"
                                 class="image lg:hidden md:block hidden" />
                             <img src="img/homepage/Mobile1.png" alt="banner 3" class="image md:hidden block" />
                             <div class="overlay"></div>

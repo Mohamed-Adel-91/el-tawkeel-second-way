@@ -18,7 +18,7 @@
         <meta name="keywords" content="{{ $metaKeywords }}">
     @endif
     <link rel="canonical" href="{{ $metaUrl }}">
-    <meta property="og:title" content=" التوكيل | {{ $metaTitle }}">
+    <meta property="og:title" content="التوكيل | {{ $metaTitle }}">
     <meta property="og:description" content="{{ $metaDescription }}">
     <meta property="og:image" content="{{ $ogImage }}">
     <meta property="og:url" content="{{ $metaUrl }}">
@@ -32,8 +32,16 @@
             <span>
                 @if ($car->banner_path)
                     <img src="{{ asset($car->banner_path) }}" alt="{{ $car->name }}">
+
+                    <!-- <img src="{{ asset($car->banner_path) }}" alt="{{ $car->name }}" class="image lg:block hidden">
+                            <img src="img/homepage/Tablet3.jpg" alt="banner 3" class="image lg:hidden md:block hidden" />
+                            <img src="img/homepage/Mobile3.jpg" alt="banner 3" class="image md:hidden block" /> -->
                 @else
                     <img src="img/homepage/Kowmore.png" alt="{{ $car->name }}">
+
+                    <!-- <img src="img/homepage/Kowmore.png" alt="{{ $car->name }}" class="image lg:block hidden">
+                            <img src="img/homepage/Tablet3.jpg" alt="banner 3" class="image lg:hidden md:block hidden" />
+                            <img src="img/homepage/Mobile3.jpg" alt="banner 3" class="image md:hidden block" /> -->
                 @endif
             </span>
             <div class="banner_content">

@@ -78,8 +78,8 @@ Route::group(['prefix' => 'dashboard', 'as' => 'admin.'], function () {
         Route::resource('colors', ColorController::class)->except(['show']);
         Route::resource('shapes', ShapeController::class)->except(['show']);
         Route::resource('service_centers', ServiceCenterController::class)->except(['show']);
-        Route::resource('feature_categories', FeatureCategoryController::class)->except(['show']);
         Route::get('features/export', [FeatureController::class, 'export'])->name('features.export');
+        Route::resource('feature_categories', FeatureCategoryController::class)->except(['show']);
         Route::resource('features', FeatureController::class)->except(['show']);
         Route::resource('installment_programs', InstallmentProgramController::class)->except(['show']);
         Route::resource('installment_orders', InstallmentOrderController::class);

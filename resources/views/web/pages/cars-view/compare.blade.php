@@ -62,12 +62,12 @@
                                     <div class="mb-4 px-2 w-full sm:w-1/2 lg:w-1/4">
                                         <a href="{{ route('web.cars.carinfo', [$car->id, \unicode_slug($car->name, '-')]) }}"
                                             class="carbrandtype">
-                                            <span class="w-full h-full">
+                                            <span class="lg:w-full lg:h-full h-2/3">
                                                 <img class="w-full h-full object-contain"
                                                     src="{{ $car->image_path ?? asset('img/compare/placeholder.png') }}"
                                                     alt="{{ $term->display_name }}">
                                             </span>
-                                            <h2 class="font-medium text-[1.2rem]">{{ $term->display_name }}</h2>
+                                            <h2 class="font-medium text-[1.2rem] dubai">{{ $term->display_name }}</h2>
                                             <h5>تبدأ من</h5>
                                             <h5>{{ $term->price_formatted }}</h5>
                                         </a>
@@ -118,7 +118,7 @@
             </div>
         </section>
 
-        <section class="tables" id="cars-compare-top-features">
+        <section class="tables dubai" id="cars-compare-top-features">
             <div class="container">
                 {{-- @if ($terms->isNotEmpty())
                     <div class="overflow-x-auto w-full mb-12">
@@ -208,7 +208,7 @@
             <section class="custom-section pt-0" id="cars-compare-actions">
                 <div class="container">
                     <div class="flex-div mb-5 ">
-                        <div class="px-2 w-full sm:mb-0 mb-5 sm:w-1/3 lg:w-1/4 md:block hidden">
+                        <div class="px-2 w-full sm:mb-0 mb-5 sm:w-1/3 lg:w-1/4 flex flex-col justify-end pb-4">
                             <h3 class="comparesection_button mb-5">حمل مواصفات العربية</h3>
                             <h3 class="comparesection_button mb-5">للطلب</h3>
                         </div>
@@ -225,12 +225,12 @@
                                     <div class="mb-4 px-2 w-full sm:w-1/2 lg:w-1/4">
                                         <a href="{{ route('web.cars.carinfo', [$car->id, \unicode_slug($car->name, '-')]) }}"
                                             class="carbrandtype">
-                                            <span class="w-full h-full">
+                                            <span class="lg:w-full lg:h-full h-2/3">
                                                 <img class="w-full h-full object-contain"
                                                     src="{{ $car->image_path ?? asset('img/compare/placeholder.png') }}"
                                                     alt="{{ $term->display_name }}">
                                             </span>
-                                            <h2 class="font-medium text-[1.2rem]">{{ $term->display_name }}</h2>
+                                            <h2 class="font-medium text-[1.2rem] dubai">{{ $term->display_name }}</h2>
                                             <h5>{{ $term->price_formatted }}</h5>
                                         </a>
                                         <div class="pt-5">

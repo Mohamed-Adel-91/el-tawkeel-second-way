@@ -11,13 +11,13 @@
         // Decode to keep Arabic characters readable in the rendered meta tag
         $metaUrl = rawurldecode(route('web.news.details', [$news->id, \unicode_slug($news->title, '-')]));
     @endphp
-    <title>{{ $metaTitle }}</title>
+    <title>التوكيل | {{ $metaTitle }}</title>
     <meta name="description" content="{{ $metaDescription }}">
     @if ($metaKeywords !== '')
         <meta name="keywords" content="{{ $metaKeywords }}">
     @endif
     <link rel="canonical" href="{{ $metaUrl }}">
-    <meta property="og:title" content="{{ $metaTitle }}">
+    <meta property="og:title" content=" التوكيل | {{ $metaTitle }}">
     <meta property="og:description" content="{{ $metaDescription }}">
     <meta property="og:image" content="{{ $news->home_url }}">
     <meta property="og:url" content="{{ $metaUrl }}">
@@ -73,11 +73,11 @@
                             </a>
                         @endforeach
                     </div>
-                    <br/>
+                    {{-- <br />
                     <button id="copy-article-link" type="button" class="mt-3 redButton copy-link-btn">
                         <span class="copy-link-label">نسخ الرابط</span>
                         <span class="copy-link-check" aria-hidden="true">✔</span>
-                    </button>
+                    </button> --}}
                     <!-- <p class="news-details_moreData_share"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
                                 viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="w-5">
                                 <path stroke-linecap="round" stroke-linejoin="round"
