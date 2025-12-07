@@ -95,19 +95,19 @@ Route::group(['as' => 'web.'], function () {
         Route::post('/profile/update', [ProfileController::class, 'update'])->name('profile.update');
         Route::post('/profile/update-password', [ProfileController::class, 'updatePassword'])->name('profile.update-password');
         Route::post('/logout', [UserAuthController::class, 'logout'])->name('logout');
-    });
 
-    Route::controller(OrderController::class)->group(function () {
-        Route::get('/booking', 'booking')->name('booking');
-        Route::post('/booking/color',  'updateColor')->name('booking.update-color');
-        Route::post('/confirm-booking', 'store')->name('confirm-booking.store');
-        Route::get('/confirm-booking/{order}', 'confirmBooking')->name('confirm-booking');
-        Route::get('/orders/{order}/status', 'status')->name('orders.status');
-        Route::get('/orders/{order}/invoice', 'invoice')->name('orders.invoice');
-        Route::get('/thanks/{order}', 'thanks')->name('thanks');
-        Route::get('/order-details/{order}', 'notPaidThanks')->name('thanks.not-paid');
-    });
 
+        Route::controller(OrderController::class)->group(function () {
+            Route::get('/booking', 'booking')->name('booking');
+            Route::post('/booking/color',  'updateColor')->name('booking.update-color');
+            Route::post('/confirm-booking', 'store')->name('confirm-booking.store');
+            Route::get('/confirm-booking/{order}', 'confirmBooking')->name('confirm-booking');
+            Route::get('/orders/{order}/status', 'status')->name('orders.status');
+            Route::get('/orders/{order}/invoice', 'invoice')->name('orders.invoice');
+            Route::get('/thanks/{order}', 'thanks')->name('thanks');
+            Route::get('/order-details/{order}', 'notPaidThanks')->name('thanks.not-paid');
+        });
+    });
     Route::controller(PaymentController::class)->group(function () {
         Route::get('/payment/success', 'success')->name('payment.success');
         Route::get('/payment/failed', 'failed')->name('payment.failed');

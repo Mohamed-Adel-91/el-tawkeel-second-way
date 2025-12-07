@@ -39,18 +39,18 @@
                                 </div>
                                 <div class="trim_trim_policy">
                                     <ul>
-                                        {{-- <li>
+                                        <li>
                                             مبلغ الحجز الخاص بك هو
                                             <span
                                                 class="main-color">{{ number_format($bookingCarClone->reservation_amount) }}
                                                 جنيه مصري</span>
-                                        </li> --}}
+                                        </li>
                                         <li class="">السيارة المعروضة هي نموذج أولي وقد تختلف عن فئة السيارة بالضبط
                                         </li>
                                         <li class="">يعتمد لون السيارة على التوفر</li>
-                                        {{-- <li class="">
+                                        <li class="">
                                             يتم تسلم السياره بعد <span class="main-color">15 يوم</span>
-                                        </li> --}}
+                                        </li>
                                     </ul>
                                 </div>
                                 <h5 class="main-color text-lg mb-4" hidden>فئات السيارة:</h5>
@@ -501,7 +501,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        {{-- <div>
+                                        <div>
                                             <h5 class="main-color text-lg mb-4 font-bold">اختر اقرب فرع:</h5>
                                             <div class="rounded-lg border-0 relative">
                                                 <select id="branchSelect" name="branch_location"
@@ -530,14 +530,14 @@
                                                     style="border:0;" allowfullscreen loading="lazy"
                                                     referrerpolicy="no-referrer-when-downgrade"></iframe>
                                             </div>
-                                        </div> --}}
-                                        {{-- <h5 class="main-color text-md mb-4 mt-4">الشروط والاحكام:</h5> --}}
+                                        </div>
+                                        <h5 class="main-color text-md mb-4 mt-4">الشروط والاحكام:</h5>
                                         <div class="flex-div hidden">
                                             <div class="tirms_cond ">
                                                 <h5 class="mb-4 text-blak">برجاء الموافقة علي الشروط والاحكام</h5>
                                                 <label class="form_group_check2">
-                                                    {{-- <input type="checkbox" name="agreed_terms" required
-                                                        {{ old('agreed_terms') ? 'checked' : '' }}> --}}
+                                                    <input type="checkbox" name="agreed_terms" required
+                                                        {{ old('agreed_terms') ? 'checked' : '' }}>
                                                     <input type="checkbox" name="agreed_terms" checked>
                                                     <p> اوافق علي جميع الشروط والاحكام وأقر أن المعلومات المقدمة صحيحة
                                                         وصحيحة ، وأنني أؤكد المعلومات المذكورة .أعلاه</p>
@@ -547,13 +547,13 @@
                                         </div>
                                         {{-- <div class="flex-div justify-center pt-4 hidden">
                                             <button type="submit" class="form-button undefined">ادفع الأن</button>
-                                        </div>
+                                        </div> --}}
                                         <div class="flex-div justify-center pt-2">
                                             <button type="button" id="demoPaymentButton" class="form-button bg-white text-mainColor border border-mainColor px-16 py-2">دفع تجريبي</button>
-                                        </div> --}}
-                                        <div id="no-payment-btn" class="flex-div justify-center pt-4">
-                                            <button type="submit" class="form-button undefined">تقديم طلب</button>
                                         </div>
+                                        {{-- <div id="no-payment-btn" class="flex-div justify-center pt-4">
+                                            <button type="submit" class="form-button undefined">تقديم طلب</button>
+                                        </div> --}}
                                     </div>
                                 </form>
                             </div>
